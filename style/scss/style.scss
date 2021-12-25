@@ -1,0 +1,42 @@
+$color-bg: red;
+$color-text: green;
+@mixin flexable($js: center, $ai: center) {
+       display: flex; 
+       align-items: $ai;
+       justify-content: $js;
+}
+@mixin text()
+{
+    padding: 15px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// nesting
+.navbar{
+    background-color: $color-bg;
+    .container{
+        max-width: 1200%;
+        margin: 0 auto;
+        width: 100%;
+        .head{
+            height: 10vh;
+            @include flexable(space-between, center);
+            background-clip: text;
+            .logo{
+                text-transform: capitalize;
+                color: green;
+            }
+            ul{
+                list-style: none;
+                @include flexable();
+                li{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: red;
+}
+.navbar .container {
+  max-width: 1200%;
+  margin: 0 auto;
+  width: 100%;
+}
+.navbar .container .head {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-clip: text;
+}
+.navbar .container .head .logo {
+  text-transform: capitalize;
+  color: green;
+}
+.navbar .container .head ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .container .head ul li {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
